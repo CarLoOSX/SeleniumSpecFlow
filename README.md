@@ -12,13 +12,13 @@ dotnet test
 ```
 Se podra ver algo similar a cuando se lanze el test:
 
-![alt text](MdasFdpPractica3/Images/chrome-driver.png)
+![alt text](Images/chrome-driver.png)
 
 Aquí deberia lanzarse chrome, importante tener la ultima versión.
 
 A continuación, una vez acabe se vera el resultado de los test:
 
-![alt text](MdasFdpPractica3/Images/test-results.png)
+![alt text](Images/test-results.png)
 
 Para ver el documento Html del resultados de los test a modo de DashBoard, he utiliado la libreria:
 
@@ -62,7 +62,7 @@ LivingDoc.html
 
 Al abrirlo se mostraran los resultados de la ultima ejecución:
 
-![alt text](MdasFdpPractica3/Images/living-doc2.png)
+![alt text](Images/living-doc2.png)
 
-![alt text](MdasFdpPractica3/Images/living-doc1.png)
+![alt text](Images/living-doc1.png)
 
