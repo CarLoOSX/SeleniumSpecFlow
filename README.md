@@ -46,13 +46,13 @@ Para generar el report Ejecutar el siguiente comando reemplazando {pathHaciaElDi
 Importante ejecutarlo desde la carpeta de nuget tools o exportarlo al path.
 
 ```
-./livingdoc test-assembly {pathHaciaElDirectorioDelProyecto}/MdasFdpPractica3/bin/Debug/netcoreapp3.1/MdasFdpPractica3.dll -t {pathHaciaElDirectorioDelProyecto}/MdasFdpPractica3/bin/Debug/netcoreapp3.1/TestExecution.json
+./livingdoc test-assembly {pathHaciaElDirectorioDelProyecto}/src/MdasFdpPractica3/bin/Debug/netcoreapp3.1/MdasFdpPractica3.dll -t {pathHaciaElDirectorioDelProyecto}/src/MdasFdpPractica3/bin/Debug/netcoreapp3.1/TestExecution.json
 ```
 
 Una vez ejecutado se generara en: 
 
 ```
-{pathHaciaElDirectorioDelProyecto}/MdasFdpPractica3/bin/Debug/netcoreapp3.1/
+{pathHaciaElDirectorioDelProyecto}/src/MdasFdpPractica3/bin/Debug/netcoreapp3.1/
 ```
 El siguiente fichero : 
 
