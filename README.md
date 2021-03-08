@@ -67,15 +67,32 @@ Importante ejecutarlo desde la carpeta de nuget tools o exportarlo al path.
 ./livingdoc test-assembly {pathHaciaElDirectorioDelProyecto}/src/MdasFdpPractica3/bin/Debug/netcoreapp3.1/MdasFdpPractica3.dll -t {pathHaciaElDirectorioDelProyecto}/src/MdasFdpPractica3/bin/Debug/netcoreapp3.1/TestExecution.json
 ```
 
-### Una vez ejecutado se generará  el fichero "LivingDoc.html" en: 
+#### Ejemplo:
 
 ```
-{pathHaciaElDirectorioDelProyecto}/src/MdasFdpPractica3/bin/Debug/netcoreapp3.1/
+ carloosx  ~ | .dotnet | tools  ./livingdoc test-assembly ~/Projects/SeleniumSpecFlow/src/MdasFdpPractica3/bin/Debug/netcoreapp3.1/MdasFdpPractica3.dll -t ~/Projects/SeleniumSpecFlow/src/MdasFdpPractica3/bin/Debug/netcoreapp3.1/TestExecution.json 
+
+/Users/carloosx/.dotnet/tools/LivingDoc.html was successfully generated.
+```
+
+### Una vez ejecutado se generará  el fichero "LivingDoc.html" en el directorio actual, en mi caso: 
+
+```
+/Users/carloosx/.dotnet/tools
+```
+
+```
+carloosx  ~ | .dotnet | tools  tree  
+.
+├── LivingDoc.html
+└── livingdoc
+
+0 directories, 2 files
 ```
 
 ### Al abrirlo se mostrarán los resultados de la última ejecución, e incluso información como el lenguaje DSL de Gherkin:
 
-![alt text](Images/feature-gherkin.png)
+![alt text](Images/test-ok.png)
 
 ### También se puede filtrar o buscar cualquier otro tipo de información:
 
@@ -83,5 +100,20 @@ Importante ejecutarlo desde la carpeta de nuget tools o exportarlo al path.
 
 ### Y presentarlo de una manera mas general:
 
-![alt text](Images/dashboard.png)
+![alt text](Images/dashboard-ok.png)
+
+## Notas a tener en cuenta:
+
+### He podido realizar correctamente los test siempre y cuando no modificase la fecha.
+#### No ha sido posible modificar el valor de fecha, ya que, aun pintándose en la web de vueling la fecha deseada, al ser un input readonly no se aplicaba, de ahí que el test falle:
+
+![alt text](Images/fecha-fail.png) 
+
+![alt text](Images/dashboard-fail.png)
+
+
+#### Por este motivo he creado un valor de enum de fechas "Any" que lo que hace es buscar para cualquier fecha:
+
+
+
 

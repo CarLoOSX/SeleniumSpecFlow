@@ -6,6 +6,7 @@
         Today,
         Tomorrow,
         Yesterday,
-        None
+        None,
+        Any
     }
 }

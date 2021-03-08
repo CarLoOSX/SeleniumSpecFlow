@@ -57,6 +57,8 @@ namespace MdasFdpPractica3.Steps
 
             _searchFlight.FlightResults().ElementAt(3).Should().BeEquivalentTo(_request.Passengers.ToString());
 
+            if (_request.Outbound == DatesEnum.Any) return;
+
             if (_request.Return == DatesEnum.None)
             {
                 _searchFlight.FlightResults().ElementAt(4).ToLowerInvariant().Should()
@@ -88,6 +90,10 @@ namespace MdasFdpPractica3.Steps
                 case DatesEnum.Yesterday:
                     date = DateTime.Today.AddDays(-1);
                     break;
+                case DatesEnum.Any:
+                    date = DateTime.Today;
+                    break;
+
                 default:
                     throw new ArgumentOutOfRangeException(nameof(requestOutbound), requestOutbound, null);
             }

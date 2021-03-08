@@ -115,7 +115,7 @@ this.ScenarioInitialize(scenarioInfo);
                 table1.AddRow(new string[] {
                             "Barcelona",
                             "Madrid",
-                            "NextWeek",
+                            "Any",
                             "None",
                             "2"});
 #line 9
