@@ -31,7 +31,7 @@ dotnet test
 
 ![alt text](Images/chrome-driver.png)
 
-Aquí debería lanzarse chrome, importante tener la última versión.
+#### Aquí debería lanzarse chrome, importante tener la última versión.
 
 ### A continuación, una vez acabe se vera el resultado de los test:
 
